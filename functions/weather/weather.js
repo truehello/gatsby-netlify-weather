@@ -5,8 +5,8 @@ const WEATHER_API_KEY = process.env.WEATHERAPI;
 exports.handler = async (event, context) => {
     const lat = event.queryStringParameters.lat || 35;
     const lng = event.queryStringParameters.lng || 139;
-    //const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${WEATHER_API_KEY}`;
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${WEATHER_API_KEY}`;
+    //const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric`;
 
 
   try {
@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
       headers: {
         Accept: "*/*",
         "Content-Type": "application/json",
-        "X-Api-Key": WEATHER_API_KEY,
+        //"X-Api-Key": WEATHER_API_KEY,
         'Access-Control-Allow-Origin' : '*',
       }
     });

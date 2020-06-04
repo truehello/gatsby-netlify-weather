@@ -53,11 +53,11 @@ This project is an example of using Netlify function to take advantage of server
 
 
 
-
 ## 💫 Sources
 
-[![IP API]](https://ip-api.com/) Simple Geolocation API
-[![OpenWeatherMap API]](https://openweathermap.org/) Weather API
+[IP API](https://ip-api.com/) Simple Geolocation API
+
+[OpenWeatherMap API](https://openweathermap.org/) Weather API
 
 [![Matt Gregg]](https://medium.com/@mattdgregg/netlify-dev-serverless-functions-mailchimp-subscribe-form-tutorial-28ffaa51ba99) Medium Article - Netlify Dev
 Serverless Functions Mailchimp Form Tutorial

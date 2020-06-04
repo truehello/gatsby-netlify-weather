@@ -1,13 +1,18 @@
 const fetch = require("node-fetch");
 
-const WEATHER_API_KEY = process.env.WEATHERAPI;
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 
 exports.handler = async (event, context) => {
-    const lat = event.queryStringParameters.lat || 35;
-    const lng = event.queryStringParameters.lng || 139;
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${WEATHER_API_KEY}`;
-    //const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric`;
-    console.log(url)
+    const lat = event.queryStringParameters.lat || 51.51;
+    const lon = event.queryStringParameters.lng || -0.13;
+
+    //const userIP = event.requestContext.identity.sourceIp
+    //const userIP = context.identity.sourceIp
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric`;
+    //console.log("context ="+JSON.stringify(context))
+    //console.log("x-forwarded-for ="+ event.headers['x-forwarded-for'])
+    console.log("IP ="+JSON.stringify( event.headers['client-ip']))
+    //event.headers['x-requested-with']
 
   try {
     const response = await fetch(url, {
@@ -15,7 +20,7 @@ exports.handler = async (event, context) => {
       headers: {
         Accept: "*/*",
         "Content-Type": "application/json",
-        //"X-Api-Key": WEATHER_API_KEY,
+        "X-Api-Key": WEATHER_API_KEY,
         'Access-Control-Allow-Origin' : '*',
       }
     });
@@ -37,3 +42,4 @@ exports.handler = async (event, context) => {
     };
   }
 };
+

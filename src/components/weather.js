@@ -106,7 +106,7 @@ const Weather = props => {
   if (isError) return <Err error={isError} />
   if (!data)
     return (
-      <div className="flex items-center justify-center h-screen">No result</div>
+      <div className="flex items-center justify-center h-screen"></div>
     )
 
   return (
@@ -117,7 +117,7 @@ const Weather = props => {
       </div>
       <p className="text-gray-700">{data.weather[0].description}</p>
       <p className="text-3xl font-bold text-gray-900 tracking-tighter">
-        {Math.round(data.main.temp)}º
+        {Math.round(data.main.temp)}ºC
       </p>
     </div>
   )

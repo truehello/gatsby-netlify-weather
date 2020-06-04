@@ -4,10 +4,11 @@ const WEATHER_API_KEY = process.env.WEATHER_API_KEY
 
 // get the geolocation from the IP in the header
 let getLocationFromIP = async userIP => {
-  if (userIP === "::1") {
+
+  //hard code an IP for testing locally with netlify dev
+  if (process.env.NODE_ENV === "development") {
     userIP = "24.69.174.90"
   }
-  console.log("ip in func =" + userIP)
 
   const url = `http://ip-api.com/json/${userIP}`
 

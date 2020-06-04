@@ -4,18 +4,12 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
-<p align="center">
-  <a href="https://www.tailwindcss.com">
-   <img alt="Tailwind CSS" src="https://tailwindcss.com/img/tailwind-twitter-square.png" width="60" />
-  
-    
-  </a>
-</p>
+
 <h1 align="center">
   Gatsby Netlify Serverless Weather
 </h1>
 
-This project is an example of using Netlify function to take advantage of serverless access third party APIs. Viewable at [![gatsby-weather.netlify.app]](https://gatsby-weather.netlify.app/)
+This project is an example of using Netlify function to take advantage of serverless access third party APIs. Viewable at [gatsby-weather.netlify.app](https://gatsby-weather.netlify.app/)
 
 
 ## 🚀 Quick start
@@ -30,7 +24,7 @@ This project is an example of using Netlify function to take advantage of server
     ```
 
 2.  **Host it on Netlify**
-    You'll need to get an API ket for [![OpenWeatherMap API]](https://openweathermap.org/) and make sure that it gets added to your environmental 
+    You'll need to get an API key for [OpenWeatherMap API](https://openweathermap.org/) and make sure that it gets added to your environmental 
     variables for your Netlify site. 
 
 
@@ -59,10 +53,10 @@ This project is an example of using Netlify function to take advantage of server
 
 [OpenWeatherMap API](https://openweathermap.org/) Weather API
 
-[![Matt Gregg]](https://medium.com/@mattdgregg/netlify-dev-serverless-functions-mailchimp-subscribe-form-tutorial-28ffaa51ba99) Medium Article - Netlify Dev
+[Matt Gregg](https://medium.com/@mattdgregg/netlify-dev-serverless-functions-mailchimp-subscribe-form-tutorial-28ffaa51ba99) Medium Article - Netlify Dev
 Serverless Functions Mailchimp Form Tutorial
 
-[![Kent C. Dodds]](https://kentcdodds.com/blog/super-simple-start-to-serverless) A Super Simple Start To Serverless
+[Kent C. Dodds](https://kentcdodds.com/blog/super-simple-start-to-serverless) A Super Simple Start To Serverless
 
 
 

@@ -39,10 +39,17 @@ This project is an example of using Netlify function to take advantage of server
     We can use Netlify's super simple serverless functions feature to query the APIs neceassy to return the weather data. Using Netlify Dev we can
     also test serverless functions locally, greatly speeding up development time. The best part is that it is super simple to set up. 
 
-    ```shell
-    cd my-default-tailwind-starter/
-    netlify dev
-    ```
+   ```shell
+    #install netlify cli tool
+   npm i -g netlify-cli
+
+   #initialize the project in netlify
+   netlify init
+
+   #run the netilfy dev enviroument. Allows for local testing of serverless function
+   netlify dev
+   ```
+
 
 
 

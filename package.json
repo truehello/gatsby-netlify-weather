@@ -6,7 +6,7 @@
   "author": "Marc trudel <marctrudel@pm.me>",
   "dependencies": {
     "@carbon/icons-react": "^10.11.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",
